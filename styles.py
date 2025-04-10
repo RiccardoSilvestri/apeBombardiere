@@ -48,3 +48,7 @@ def configure_styles(style):
     style.map("Treeview", 
              background=[("selected", COLORS["highlight"])],
              foreground=[("selected", COLORS["primary"])])
+    
+
+    style.configure("Error.TButton", background=COLORS["error"])
+    style.map("Error.TButton", background=[("active", COLORS["error"])])
